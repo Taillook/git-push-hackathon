@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		468BDC60E509F3F16810CB84 /* Pods_GiventUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54367B162EE6623F7CAAB153 /* Pods_GiventUITests.framework */; };
+		8009A0F8F8B2D0FF62471445 /* Pods_Givent.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41DF55BF3ED7C0FC7B5F2BD6 /* Pods_Givent.framework */; };
 		C95C0DC1203DBC3F00CE1F8A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95C0DC0203DBC3F00CE1F8A /* AppDelegate.swift */; };
 		C95C0DC3203DBC3F00CE1F8A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95C0DC2203DBC3F00CE1F8A /* ViewController.swift */; };
 		C95C0DC6203DBC3F00CE1F8A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C95C0DC4203DBC3F00CE1F8A /* Main.storyboard */; };
@@ -26,6 +28,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0E747C879F6782E0734CEC0B /* Pods-GiventUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GiventUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GiventUITests/Pods-GiventUITests.release.xcconfig"; sourceTree = "<group>"; };
+		1B9FD9C6F3C29F0E2735A47B /* Pods-GiventUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GiventUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GiventUITests/Pods-GiventUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		41DF55BF3ED7C0FC7B5F2BD6 /* Pods_Givent.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Givent.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		54367B162EE6623F7CAAB153 /* Pods_GiventUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GiventUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9014B02E8AEF83893DA9C66A /* Pods-Givent.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Givent.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Givent/Pods-Givent.debug.xcconfig"; sourceTree = "<group>"; };
+		9E9AB5607FA80B2B453AEA27 /* Pods-Givent.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Givent.release.xcconfig"; path = "Pods/Target Support Files/Pods-Givent/Pods-Givent.release.xcconfig"; sourceTree = "<group>"; };
 		C95C0DBD203DBC3F00CE1F8A /* Givent.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Givent.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C95C0DC0203DBC3F00CE1F8A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C95C0DC2203DBC3F00CE1F8A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -43,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8009A0F8F8B2D0FF62471445 /* Pods_Givent.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,18 +59,41 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				468BDC60E509F3F16810CB84 /* Pods_GiventUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		27592E8CB4D9DC13D5CD75C1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				41DF55BF3ED7C0FC7B5F2BD6 /* Pods_Givent.framework */,
+				54367B162EE6623F7CAAB153 /* Pods_GiventUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		96B9CB7CEFAAE55E242B929A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9014B02E8AEF83893DA9C66A /* Pods-Givent.debug.xcconfig */,
+				9E9AB5607FA80B2B453AEA27 /* Pods-Givent.release.xcconfig */,
+				1B9FD9C6F3C29F0E2735A47B /* Pods-GiventUITests.debug.xcconfig */,
+				0E747C879F6782E0734CEC0B /* Pods-GiventUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		C95C0DB4203DBC3F00CE1F8A = {
 			isa = PBXGroup;
 			children = (
 				C95C0DBF203DBC3F00CE1F8A /* Givent */,
 				C95C0DD4203DBC3F00CE1F8A /* GiventUITests */,
 				C95C0DBE203DBC3F00CE1F8A /* Products */,
+				96B9CB7CEFAAE55E242B929A /* Pods */,
+				27592E8CB4D9DC13D5CD75C1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,9 +135,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C95C0DDA203DBC3F00CE1F8A /* Build configuration list for PBXNativeTarget "Givent" */;
 			buildPhases = (
+				EFB307AE7A1A68ED978A67B9 /* [CP] Check Pods Manifest.lock */,
 				C95C0DB9203DBC3F00CE1F8A /* Sources */,
 				C95C0DBA203DBC3F00CE1F8A /* Frameworks */,
 				C95C0DBB203DBC3F00CE1F8A /* Resources */,
+				AD9CB0C6585AE20847BE96DA /* [CP] Embed Pods Frameworks */,
+				5FE49918B694115812D9ABCF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -120,9 +155,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C95C0DDD203DBC3F00CE1F8A /* Build configuration list for PBXNativeTarget "GiventUITests" */;
 			buildPhases = (
+				125095109CEA414F03F51464 /* [CP] Check Pods Manifest.lock */,
 				C95C0DCD203DBC3F00CE1F8A /* Sources */,
 				C95C0DCE203DBC3F00CE1F8A /* Frameworks */,
 				C95C0DCF203DBC3F00CE1F8A /* Resources */,
+				DCC58B2227E38C4A36E03848 /* [CP] Embed Pods Frameworks */,
+				25E8ED24BF566105E68EA40A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -193,6 +231,114 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		125095109CEA414F03F51464 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GiventUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		25E8ED24BF566105E68EA40A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GiventUITests/Pods-GiventUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5FE49918B694115812D9ABCF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Givent/Pods-Givent-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AD9CB0C6585AE20847BE96DA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Givent/Pods-Givent-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Givent/Pods-Givent-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DCC58B2227E38C4A36E03848 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GiventUITests/Pods-GiventUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EFB307AE7A1A68ED978A67B9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Givent-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C95C0DB9203DBC3F00CE1F8A /* Sources */ = {
@@ -351,6 +497,7 @@
 		};
 		C95C0DDB203DBC3F00CE1F8A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9014B02E8AEF83893DA9C66A /* Pods-Givent.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -366,6 +513,7 @@
 		};
 		C95C0DDC203DBC3F00CE1F8A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9E9AB5607FA80B2B453AEA27 /* Pods-Givent.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -381,6 +529,7 @@
 		};
 		C95C0DDE203DBC3F00CE1F8A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1B9FD9C6F3C29F0E2735A47B /* Pods-GiventUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -397,6 +546,7 @@
 		};
 		C95C0DDF203DBC3F00CE1F8A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0E747C879F6782E0734CEC0B /* Pods-GiventUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
